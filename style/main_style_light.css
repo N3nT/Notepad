@@ -1,0 +1,40 @@
+body{
+    background-color: #f6fff8;
+    color: black;
+}
+menu{
+    background-color: #eaf4f4;
+}
+img{
+    background-color: #e1ebeb;
+}
+img:hover{
+    background-color: #d6dddd;
+}
+.button{
+    background-color: #e1ebeb;
+}
+.button:hover{
+    background-color: #d6dddd;
+}
+.save{
+    color: black;
+}
+#email{
+    border-bottom: 1px solid black;
+}
+table{
+    border: 1px solid black;
+}
+table td{
+    border: 1px solid black;
+}
+table button{
+    border: 1px solid black;
+    color: black;
+    background-color: #e1ebeb;
+}
+table button:hover{
+    cursor: pointer;
+    background-color: #d6dddd;
+}

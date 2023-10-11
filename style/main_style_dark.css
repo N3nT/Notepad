@@ -1,0 +1,46 @@
+body{
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+textarea{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+menu{
+    background-color: #404258;
+}
+img{
+    background-color: #474E68;
+}
+img:hover{
+    background-color: #6B728E;
+}
+.button{
+    background-color: #474E68;
+}
+.button:hover{
+    background-color: #6B728E;
+}
+.wrap{
+    background-color: rgb(32, 32, 32);
+}
+.save{
+    color: white;
+}
+#email{
+    border-bottom: 1px solid white;
+}
+table{
+    border: 1px solid white;
+}
+table td{
+    border: 1px solid white;
+}
+table button{
+    border: 1px solid white;
+    color: white;
+    background-color: #474E68;
+}
+table button:hover{
+    background-color: #6B728E;
+}
