@@ -80,3 +80,9 @@ table button{
 table button:hover{
     cursor: pointer;
 }
+.user_photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 45px;
+}

@@ -17,10 +17,10 @@ function toggle_mode(){
                 options[2].setAttribute('src', 'img/callendar_white.png');
             }
             else if(i == 3){
-                options[3].setAttribute('src', 'img/settings_white.png');
+                options[3].setAttribute('src', 'img/day-and-night_white.png');
             }
             else if(i == 4){
-                options[4].setAttribute('src', 'img/day-and-night_white.png');
+                options[4].setAttribute('src', 'img/turn-off-white.png');
             }
 
         }
@@ -40,10 +40,10 @@ function toggle_mode(){
                 options[2].setAttribute('src', 'img/callendar.png');
             }
             else if(i == 3){
-                options[3].setAttribute('src', 'img/settings.png');
+                options[3].setAttribute('src', 'img/day-and-night.png');
             }
             else if(i == 4){
-                options[4].setAttribute('src', 'img/day-and-night.png');
+                options[4].setAttribute('src', 'img/turn-off.png');
             }
     }
 }}
@@ -106,20 +106,6 @@ function doSomething(){
        toggle_mode();
     }
 }
-
-// const script = document.querySelector('script');
-// script.addEventListener("onload", checkStreak());
-// function checkStreak(){
-//     const inputStreak = document.querySelector('#input_streak');
-//     if(document.cookie.indexOf('streak=') == -1){
-//         setcookie_24h("streak", 0);
-//         inputStreak.value = 0;
-//     }
-//     else{
-//         getCookie('streak')
-//         inputStreak.value = getCookie('streak');
-//     }
-// }
 
 const table = document.querySelector('.form_table');
 const correction = () => {

@@ -4,6 +4,9 @@
     <?php
         require('dbconnection.php');
         session_start();
+        if($_SESSION['current_user'] == ""){
+            header("Location: login.php");
+        }
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +23,8 @@
         <a href="user.php" class="menu_icon"><img src="img/user.png" alt="User account"></a>
         <a href="main.php" class="menu_icon"><img src="img/notes.png" alt="Notepad"></a>
         <a href="list.php" class="menu_icon"><img src="img/callendar.png" alt="Callendar"></a>
-        <a href="#" class="menu_icon"><img src="img/settings.png" alt="Settings"></a>
         <a href="#" class="menu_icon"><img src="img/day-and-night.png" alt="Night Mode" onclick="toggle_mode()"></a>
+        <a href="log_off.php" class="menu_icon"><img src="img/turn-off.png" alt="Log-off"></a>
     </menu>
     <div class="wrap">
         <div>
@@ -33,6 +36,7 @@
                 $query_note = mysqli_query($db_conn, "SELECT Content FROM usernotes where UserID = '$user_id' and CreationDate = '$creation_date';");
                 $note = mysqli_fetch_assoc($query_note);
                 echo '<textarea name="note" id="notepad" cols="146" rows="40" maxlenght="5945" disabled>'.$note['Content'].'</textarea>';
+                mysqli_close($db_conn);
             ?>
         </div>
     </div>
